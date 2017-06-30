@@ -44,8 +44,8 @@
   * review validations.
     * presence of author
     * presence of content_body
-      * min 50 words
-      * max 250 words
+      * min 50 characters
+      * max 250 characters
     * presence of rating
       * min number 1
       * max number 5
@@ -55,6 +55,12 @@
   * seeding using Faker
     * 50 products
     * 250 reviews
+
+  * Scopes
+    * The product with the most reviews.
+    * The three most recently added products.
+    * All products made in the USA for buyers that want to buy local products.
+    
 2. User Stories
   * Site admins should be able to add, update and delete new products. (Don't worry about user authentication; assume everyone who visits the site is an admin for now).
   * Users should be able to click an individual product to see its detail page. (You will not be expected to show the product's average rating; that's included in the further exploration section.)
