@@ -1,11 +1,19 @@
-<h1>Products</h1>
+<h2>Products</h2>
 
-<ul>
-  <% @products.each do |product| %>
-    <li><%= link_to "Show", product_path(product) %></li>
-  <% end %>
-</ul>
+<div class="col-md-6">
+  <h3>All Products</h3>
+  <ul>
+    <% @products.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+</div>
 
-<hr>
-
-<%= link_to "New Product", new_product_path %>
+<div class="col-md-6">
+  <h3>Local Products</h3>
+  <ul>
+    <% @localProducts.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+</div>

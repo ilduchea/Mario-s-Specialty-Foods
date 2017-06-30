@@ -1,6 +1,13 @@
 class ProductsController < ApplicationController
+
+  def landing
+    @mostReviews = Product.mostReviews
+    @recentProducts = Product.recentProducts
+  end
+
   def index
     @products = Product.all
+    @localProducts = Product.localProducts("USA")
   end
 
   def show
@@ -29,7 +36,7 @@ class ProductsController < ApplicationController
     @product= Product.find(params[:id])
     if @product.update(product_params)
       flash[:notice] = "Product successfully updated!"
-      redirect_to products_path
+      redirect_to product_path(@product.id)
     else
       render :edit
     end

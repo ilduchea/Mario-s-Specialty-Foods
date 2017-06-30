@@ -9,13 +9,13 @@
 Product.destroy_all
 Review.destroy_all
 
-1.times do |index1|
+2.times do |index1|
   myProduct = Product.create!(
     name: Faker::Food.ingredient,
     cost: Faker::Number.between(1, 100),
-    origin: Faker::Address.country
+    origin: "USA"
   )
-  54.times do |index2|
+  4.times do |index2|
     myProduct.reviews.create!(
     author: Faker::Book.author,
     content_body: Faker::Lorem.characters(50..250),
@@ -24,13 +24,28 @@ Review.destroy_all
   end
 end
 
-49.times do |index1|
+1.times do |index1|
+  myProduct = Product.create!(
+    name: Faker::Food.ingredient,
+    cost: Faker::Number.between(1, 100),
+    origin: "USA"
+  )
+  7.times do |index2|
+    myProduct.reviews.create!(
+    author: Faker::Book.author,
+    content_body: Faker::Lorem.characters(50..250),
+    rating: Faker::Number.between(1, 5),
+  )
+  end
+end
+
+47.times do |index1|
   myProduct = Product.create!(
     name: Faker::Food.ingredient,
     cost: Faker::Number.between(1, 100),
     origin: Faker::Address.country
   )
-  4.times do |index2|
+  5.times do |index2|
     myProduct.reviews.create!(
     author: Faker::Book.author,
     content_body: Faker::Lorem.characters(50..250),

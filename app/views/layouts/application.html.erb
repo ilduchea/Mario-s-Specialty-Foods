@@ -9,6 +9,18 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Mario's Specialty Foods</h1>
+      </div>
+      <div class="navbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Products", products_path %></li>
+          <li><%= link_to "New Product", new_product_path %></li>
+        </ul>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>

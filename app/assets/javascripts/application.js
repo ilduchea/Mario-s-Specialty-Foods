@@ -13,3 +13,16 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery
+//= require bootstrap-sprockets
+
+// $(function() {
+//   $('#orginSort').click(function() {
+//     var origin = $("input[name=origin]").val();
+//
+//     $.ajax({
+//       url: `/products/localProducts/${orign}`,
+//       type: 'get'
+//     });
+//   });
+// });

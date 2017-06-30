@@ -1,0 +1,11 @@
+<%= render "layouts/errors", :object => @product %>
+
+<%= form_for [@product, Review.new] do |f| %>
+  <div class="form-group">
+    <%= f.label :rating %>
+    <%= f.number_field :rating, min: 1, max: 5 %>
+    <%= f.text_field :author, class: "form-control", placeholder: "Your Name" %>
+    <%= f.text_area :content_body, class: "form-control", placeholder: "Your Review" %>
+  </div>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>

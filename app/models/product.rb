@@ -13,5 +13,6 @@ class Product < ApplicationRecord
 
   scope :recentProducts, -> { order(created_at: :desc).limit(3)}
 
-  scope :localProducts, -> (origin_parameter) { where("origin like ?", "%#{origin_parameter}%")}
+  scope :localProducts, -> (origin_parameter) { where("origin like ?",
+    "%#{origin_parameter}%")}
 end

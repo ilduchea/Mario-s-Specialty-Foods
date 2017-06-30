@@ -60,14 +60,11 @@
     * The product with the most reviews.
     * The three most recently added products.
     * All products made in the USA for buyers that want to buy local products.
-    
+
 2. User Stories
   * Site admins should be able to add, update and delete new products. (Don't worry about user authentication; assume everyone who visits the site is an admin for now).
   * Users should be able to click an individual product to see its detail page. (You will not be expected to show the product's average rating; that's included in the further exploration section.)
   * Users should be able to add a review to a product.
-
-3. Integration/Routes
-  * Home - list#index
 
 4. UX/UI
   * Include and modify bootstrap/materialize/Sass etc.
