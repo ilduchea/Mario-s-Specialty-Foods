@@ -10,4 +10,8 @@ class Product < ApplicationRecord
       .order("reviews_count DESC")
       .limit(1)
     )}
+
+  scope :recentProducts, -> { order(created_at: :desc).limit(3)}
+
+  scope :localProducts, -> (origin_parameter) { where("origin like ?", "%#{origin_parameter}%")}
 end

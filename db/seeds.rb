@@ -16,7 +16,7 @@ Review.destroy_all
     origin: Faker::Address.country
   )
   54.times do |index2|
-    myReview = myProduct.reviews.create!(
+    myProduct.reviews.create!(
     author: Faker::Book.author,
     content_body: Faker::Lorem.characters(50..250),
     rating: Faker::Number.between(1, 5),
@@ -31,7 +31,7 @@ end
     origin: Faker::Address.country
   )
   4.times do |index2|
-    myReview = myProduct.reviews.create!(
+    myProduct.reviews.create!(
     author: Faker::Book.author,
     content_body: Faker::Lorem.characters(50..250),
     rating: Faker::Number.between(1, 5),
