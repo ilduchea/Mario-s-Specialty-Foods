@@ -12,7 +12,7 @@
 * clone <link to repo>
 * cd <local repo>
 * run this series of commands:
-  * `$ npm install`
+  * `$ bundle install`
   * `$ rails db:create`
   * `$ rails db:migrate db:test:prepare`
   * `$ rails db:seed`
