@@ -39,6 +39,7 @@
       * author - string
       * content_body - string
       * rating - integer
+      * product_id - integer
       * timestamps
   * review validations.
     * presence of author
