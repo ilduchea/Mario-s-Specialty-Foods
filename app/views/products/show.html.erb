@@ -15,7 +15,7 @@
 <h3>Reviews</h3>
 
 <% @product.reviews.each do |review| %>
-  <div class="panel panel-info">
+  <div class="panel">
     <div class="panel-heading">Rating: <%= review.rating %> by <%= review.author %></div>
     <div class="panel-body">
       <p><%= review.content_body %></p>
@@ -23,7 +23,7 @@
   </div>
 <% end %>
 
-<div class="panel panel-info">
+<div class="panel">
   <div class="panel-heading"><h4>Add Review</h4></div>
   <div class="panel-body">
     <%= render partial: "reviews/form", locals: {product: @product} %>
