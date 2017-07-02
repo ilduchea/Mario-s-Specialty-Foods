@@ -72,9 +72,21 @@ body {
     :-ms-input-placeholder { /* IE 10+ */
       color: $black;
     }
-    
+
     input[type="text"], input[type="number"], textarea {
       background: $lightGreen;
+    }
+  }
+
+  .navbar {
+    .nav {
+      li {
+        a:hover {
+          background: $black;
+          color: $offWhite;
+          border-radius: 5px;
+        }
+      }
     }
   }
 }
